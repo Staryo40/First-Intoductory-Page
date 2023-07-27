@@ -1,0 +1,162 @@
+/* General */
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body{
+  text-align: center;
+}
+
+/* Header */
+.header{
+  font-family: 'pacifico', cursive;
+  font-size: 100px;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #F6F1F1, #146C94, #112D4E);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.top{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+.pp{
+    border-radius: 50%;
+}
+
+.title{
+  color: #3F72AF;
+  padding-bottom: 50px;
+}
+
+.descs{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images and description */
+h2{
+  margin-top: 20px;
+  color: #19A7CE;
+  margin-bottom: 20px;
+}
+
+.simg {
+    float: left;
+    margin-right: 50px;
+    height: 300px;
+}
+
+.timg{
+  text-align: left;
+  height: 550px;
+  float: left;
+  margin-right: 50px;
+}
+
+.sitem{
+  width: 80%;
+  text-align: left;
+}
+
+.link{
+  margin: 0;
+}
+
+/* Contact me */
+.contain{
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.btn{
+  background-color: #749BC2;
+  background-image: linear-gradient(to bottom, #749BC2, #4682A9);
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+/* Footer */
+.bottom-container {
+  background-color: #5caee4;
+  padding: 50px 0 20px;
+}
+
+a {
+  color: #407ea8;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.copyright{ 
+    color: #eaf6f6;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+@media (max-width: 680px) {
+  body{
+    width: 100%;
+    height: 100%;
+  }
+
+  .header{
+    font-size: 50px;
+  }
+
+  .simg{
+    float: none;
+    height: 150px;
+  }
+
+  .timg{
+    float: none;
+    height: 300px;
+  }
+
+  .bottom-container {
+    background-color: #5caee4;
+    padding: 50px 0 100px;
+  }
+}
+
